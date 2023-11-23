@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>DeganiFlix</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">DeganiFlix</h1>
+      <p class="page-subtitle">Qual seu filme favorito?</p>
+      <div class="form-wrapper">
+        <input
+          type="text"
+          id="movie"
+          name="movie"
+          placeholder="Insira endereço de imagem"
+        />
+        <input
+          type="text"
+          id="trailer"
+          name="trailer"
+          placeholder="Insira endereço do trailer"
+        />
+        <button onClick="addInfos()">Adicionar Filme</button>
+        <p class="page-info">*Clique no cartaz para ver o trailer</p>
+      </div>
+    </div>
+    <div id="listaFilmes"></div>
+
+    <div id="movies-container"></div>
+  </body>
+</html>
